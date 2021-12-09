@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style type="text/css">
+         .m-template {
+            background-color: #C94747;
+         }
+         .m-template__body {
+            border: 1px solid #FA5FB1;
+            box-shadow: 0 0 0 0.2rem #FA5FB1;
+         }
+         .m-trx__amt amount {
+            color: #818181;
+         }
+         select#ideal_select {
+            color: #E61D1D;
+            background-color: #C94747;
+         }
+         .m-payment__form{
+            background-color: #FA5FB1;
+            border: 1px solid #FA5FB1;
+            color: #250404;
+         }
+	  </style>
+   </head>
+   <body>
+      <div class="m-template">
+         <div class="m-template__body">
+            <div class="m-trx">
+               <div class="m-trx__amt amount">
+                  <p id="amount">£25.50</p>
+               </div>
+               <div class="m-trx__meta details">
+                  <p id="organisation_name">White Stuff</p>
+                  <p id="merchant_reference">Himanshu Tiwari</p>
+               </div>
+            </div>
+            <div class="m-payment__form">
+               <form id="payment_fieldset" method="POST"></form>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
