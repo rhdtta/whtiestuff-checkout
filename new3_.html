@@ -1,45 +1,23 @@
 <!DOCTYPE html>
 <html>
    <head>
-<!--       <style type="text/css">
-         .m-template {
-            background-color: #C94747;
-         }
-         .m-template__body {
-            border: 1px solid #FA5FB1;
-            box-shadow: 0 0 0 0.2rem #FA5FB1;
-         }
-         .m-trx__amt amount {
-            color: #818181;
-         }
-         select#ideal_select {
-            color: #E61D1D;
-            background-color: #C94747;
-         }
-         .m-payment__form{
-            background-color: #FA5FB1;
-            border: 1px solid #FA5FB1;
-            color: #250404;
-         }
-	  </style> -->
    </head>
    <body>
 	<div class="m-template">
     <div class="m-template__body">
-        
+        <div class="m-template__logo ng-tns-c8-13 ng-star-inserted">
+		<img src="https://rhdtta.github.io/whtiestuff-checkout/DE%20progress%20bar%20mobile.png">
+        </div>
         <div class="m-trx">
             <div class="m-trx__amt amount">
                 <p class="ng-tns-c8-13" id="amount" style="color: rgb(100, 137, 189);"></p>
             </div>
             <div class="m-trx__meta details">
-                <!----><span class="ng-tns-c8-13 ng-star-inserted" style=""> Organisation </span>
                 <p class="ng-tns-c8-13" id="organisation_name"></p>
-                <!----><span class="ng-tns-c8-13 ng-star-inserted" style=""> Merchant reference </span>
                 <p class="ng-tns-c8-13" id="merchant_reference"></p>
             </div>
         </div>
 
-        <!----><label class="ng-tns-c8-13 ng-star-inserted" style="color: rgb(164, 171, 180);"> Payment methods </label>
         <div class="m-payment__form has-style">
             <form class="ng-tns-c8-13"
                 id="paymentForm" method="POST">
