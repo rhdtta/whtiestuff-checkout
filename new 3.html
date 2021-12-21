@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <style type="text/css">
+<!--       <style type="text/css">
          .m-template {
             background-color: #C94747;
          }
@@ -21,25 +21,68 @@
             border: 1px solid #FA5FB1;
             color: #250404;
          }
-	  </style>
+	  </style> -->
    </head>
    <body>
-      <img src="https://rhdtta.github.io/whtiestuff-checkout/DE%20progress%20bar%20mobile.png">
-      <div class="m-template">
-         <div class="m-template__body">
-            <div class="m-trx">
-               <div class="m-trx__amt amount">
-                  <p id="amount"></p>
-               </div>
-               <div class="m-trx__meta details">
-                  <p id="organisation_name"></p>
-                  <p id="merchant_reference"></p>
-               </div>
+<!--       <img src="https://rhdtta.github.io/whtiestuff-checkout/DE%20progress%20bar%20mobile.png"> -->
+      <div class="m-template"
+    style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-family: &quot;Montserrat&quot;, sans-serif;">
+    <!---->
+    <div class="m-template__body">
+        <!---->
+        <div class="m-template__logo ng-tns-c8-13 ng-star-inserted"
+            style="background-image: url(&quot;blob:https://sandbox.omni.verifone.cloud/7e2ea6c9-daea-40bc-bce5-d4589f3d2daf&quot;);">
+        </div>
+        <!----><label class="ng-tns-c8-13 ng-star-inserted" style="color: rgb(164, 171, 180);"> Transaction details
+        </label>
+        <div class="m-trx">
+            <div class="m-trx__amt amount">
+                <p class="ng-tns-c8-13" id="amount" style="color: rgb(100, 137, 189);"> 18.99 EUR </p>
             </div>
-            <div class="m-payment__form">
-               <form id="payment_fieldset" method="POST"></form>
+            <div class="m-trx__meta details">
+                <!----><span class="ng-tns-c8-13 ng-star-inserted" style=""> Organisation </span>
+                <p class="ng-tns-c8-13" id="organisation_name">White Stuff.</p>
+                <!----><span class="ng-tns-c8-13 ng-star-inserted" style=""> Merchant reference </span>
+                <p class="ng-tns-c8-13" id="merchant_reference">aef6012672c897dfc116620d</p>
             </div>
-         </div>
-      </div>
+        </div>
+        <!----><label class="ng-tns-c8-13 ng-star-inserted" style="color: rgb(164, 171, 180);"> Payment methods </label>
+        <div class="m-payment__form has-style">
+            <form class="ng-tns-c8-13" action="https://sandbox.omni.verifone.cloud/initiate_transaction"
+                id="paymentForm" method="POST">
+                <fieldset id="_fieldset">
+                    <div class="row">
+                        <div class="col-xs-12" id="_payment_product_container">
+                            <div class="jc-productTab jc-productTabSelected"><img id="_image_ideal" alt="ideal"
+                                    src="https://sandbox.omni.verifone.cloud/static/jsclient/images/ideal.png"
+                                    class="jc-productTabImage"></div>
+                            <div class="jc-productTab"><img id="_image_card" alt="card"
+                                    src="https://sandbox.omni.verifone.cloud/static/jsclient/images/card.png"
+                                    class="jc-productTabImage"></div>
+                            <div class="jc-productTab"><img id="_image_paypal" alt="paypal"
+                                    src="https://sandbox.omni.verifone.cloud/static/jsclient/images/paypal.png"
+                                    class="jc-productTabImage"></div>
+                        </div>
+                    </div>
+                    <div id="_main_container" class="row">
+                        <div><input name="payment_product" type="hidden" value="ideal"><input name="dynamic_descriptor"
+                                type="hidden"><label class="col-xs-2" for="_ideal_select" id="_ideal_label">Please
+                                select your bank</label>
+                            <div class="col-xs-10"><select class="form-control" id="ideal_select" name="issuer">
+                                    <option disabled="">iDEAL payment not available</option>
+                                </select></div><input class="btn btn-info" id="_submit_button" type="submit"
+                                value="Submit">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="alert alert-danger col-xs-10 col-xs-offset-1" id="_alert_container"
+                            style="display: none;"></div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="ng-tns-c8-13" id="jwt"></div>
+        </div>
+    </div>
+</div>
    </body>
 </html>
