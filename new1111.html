@@ -1,0 +1,55 @@
+<html>
+   <head>
+   </head>
+   <body>
+	<div class="m-template">
+    <div class="m-template__body">
+	    <div class="container-fluid" style="margin-top: 1%">
+		    <div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 text-center">
+			    <img src="WHITE_STUFF_LOGO_Horizontal_Black.png" width="45%" height="auto">
+		    </div>
+		    <span>
+		    	<div class="text-right col-xs-4 col-sm-2 col-sm-offset-2">
+		    		<img src="lock.png" width="12%" height="auto">
+			</div>
+			    
+			<!-- 	Secure Checkout Notify for Desktop/Tablet -->
+			<span class="hidden visible-sm visible-md- visible-lg">Secure Checkout</span>
+			    
+			<!-- 	Secure Checkout Notify for Mobile Device -->
+		        <span class="hidden-sm">Secure</span>
+		    </span>
+		    
+	    </div>
+	    <hr style="margin-top: 8px">
+	    
+	    <!--   Progress Bar for Desktop/Tablet -->
+	    <div class="hidden visible-sm visible-md- visible-lg">
+		    <img src="https://rhdtta.github.io/whtiestuff-checkout/UK%20progress%20bar%20desktop.png" width="100%">
+	    </div>
+	    
+	    <!--   Progress Bar For Mobile Device -->
+	    <div class="hidden-sm">
+		    <img src="https://rhdtta.github.io/whtiestuff-checkout/UK%20progress%20bar%20mobile.png" width="100%">
+	    </div>
+	    
+
+	    
+        <div class="m-trx container-fluid col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 text-center" style="margin-top: 3%">
+            <div class="m-trx__amt amount">
+                <p id="amount"></p>
+            </div>
+            <div class="m-trx__meta details">
+                <p id="organisation_name"></p>
+                <p id="merchant_reference"></p>
+            </div>
+        </div>
+
+        <div class="m-payment__form col-xs-12  col-sm-6 col-sm-offset-3 text-center">
+            <form id="payment_fieldset" method="POST"></form>
+            <div id="jwt"></div>
+        </div>
+    </div>
+</div>
+   </body>
+</html>
